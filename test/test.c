@@ -46,6 +46,8 @@ demo2() {
   char s[20];
   int n;
 
+
+   
   _mbscpy(d,s); /* like strcpy, this doesn't check for buffer overflow */
   memcpy(d,s); // fail - no size
   memcpy(d, s, sizeof(d)); // pass
